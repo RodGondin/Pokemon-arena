@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+  <title>Pokemon Arena</title>
+  <script type="module" src='index.js' defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gugi&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nabla&family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <img src="./assets/pokemon.png" alt="Pokemon Arena">
+      <h1 class="no-select">Arena</h1>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="pokemons"></div>
+    </div>
+  </section>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <span class="modal-close" id="modalClose">&#10006;</span>
+      </div>
+
+      <section class="modal-info">
+      </section>
+
+      <footer class="modal-footer">
+        <!-- <button id="sendToArena" class="button green">Battle</button>
+        <button id="cancel" class="button blue">Cancel</button> -->
+      </footer>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="limit">
+      <p>Pokemons per page</p>
+      <select id="limit" onchange="changePg(value)">
+        <option value="40">40</option>
+        <option value="60">60</option>
+        <option value="80">80</option>
+      </select>
+    </div>
+    <div class="navigation">
+      <button onclick="prev()">«</button>
+      <div class="numbers"></div>
+      <button onclick="next()">»</button>
+    </div>
+    <p class="author">Pokemon Arena by <a href="https://github.com/rodgondin" target="_blank">RodGondin</a></p>
+  </footer>
+
+</body>
