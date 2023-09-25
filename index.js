@@ -3,7 +3,6 @@ let container = document.querySelector(".pokemons");
 let selectPage = document.querySelector("#limit");
 let navigation = document.querySelector(".navigation .numbers");
 
-let pokemons = [];
 let prevLink = "";
 let nextLink = "";
 let count = 0;
