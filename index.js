@@ -9,7 +9,7 @@ let count = 0;
 let perPage = 40;
 let currentPage = 0;
 
-// Utilizar window ao inves de const para executar funções chamadas no html, isso é por causa do type="module" coloda para chamar o js
+// Utilizar window ao inves de const para executar funções chamadas no html, isso é por causa do type="module" colocada para chamar o js
 // Esta é uma medida de segurança introduzida com módulos ES6 para evitar poluir o escopo global acidentalmente. Portanto, ao usar módulos ES6, você deve ser explícito sobre quais variáveis ou funções deseja expor globalmente usando window.
 window.changePg = (value) => {
   let newUrl = `${url}pokemon?limit=${value}`;
